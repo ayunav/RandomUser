@@ -12,6 +12,9 @@
 		D9B36CC21E234B9A004F93F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC01E234B9A004F93F0 /* Main.storyboard */; };
 		D9B36CC41E234B9A004F93F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC31E234B9A004F93F0 /* Assets.xcassets */; };
 		D9B36CC71E234B9A004F93F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC51E234B9A004F93F0 /* LaunchScreen.storyboard */; };
+		D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */; };
+		D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */; };
+		D9B36D001E240CCE004F93F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFF1E240CCE004F93F0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D9B36CC31E234B9A004F93F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B36CC61E234B9A004F93F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9B36CC81E234B9A004F93F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		D9B36CFF1E240CCE004F93F0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +62,11 @@
 			children = (
 				D9B36CCE1E234BA7004F93F0 /* Application */,
 				D9B36CD11E234BCA004F93F0 /* Controllers */,
+				D9B36CFE1E240CC2004F93F0 /* Models */,
+				D9B36D011E240D34004F93F0 /* Networking */,
 				D9B36CD01E234BBF004F93F0 /* Resources */,
 				D9B36CCF1E234BAF004F93F0 /* Storyboards */,
+				D9B36CF81E240014004F93F0 /* Views */,
 			);
 			path = RandomUser;
 			sourceTree = "<group>";
@@ -94,6 +103,40 @@
 				D9B36CBE1E234B9A004F93F0 /* ViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D9B36CF81E240014004F93F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9B36CF91E240021004F93F0 /* Cells */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D9B36CF91E240021004F93F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */,
+				D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */,
+			);
+			name = Cells;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D9B36CFE1E240CC2004F93F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9B36CFF1E240CCE004F93F0 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D9B36D011E240D34004F93F0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */,
 				D9B36CC71E234B9A004F93F0 /* LaunchScreen.storyboard in Resources */,
 				D9B36CC41E234B9A004F93F0 /* Assets.xcassets in Resources */,
 				D9B36CC21E234B9A004F93F0 /* Main.storyboard in Resources */,
@@ -169,7 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B36D001E240CCE004F93F0 /* User.swift in Sources */,
 				D9B36CBF1E234B9A004F93F0 /* ViewController.swift in Sources */,
+				D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */,
 				D9B36CBD1E234B9A004F93F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +378,7 @@
 				D9B36CCD1E234B9A004F93F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
