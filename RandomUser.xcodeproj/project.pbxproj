@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D95BA4E41E24281E00CC6FBD /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = D95BA4E31E24281E00CC6FBD /* randomUsers.json */; };
+		D95BA4E61E2428BD00CC6FBD /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BA4E51E2428BD00CC6FBD /* UserStore.swift */; };
 		D9B36CBD1E234B9A004F93F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CBC1E234B9A004F93F0 /* AppDelegate.swift */; };
-		D9B36CBF1E234B9A004F93F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CBE1E234B9A004F93F0 /* ViewController.swift */; };
+		D9B36CBF1E234B9A004F93F0 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CBE1E234B9A004F93F0 /* UsersViewController.swift */; };
 		D9B36CC21E234B9A004F93F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC01E234B9A004F93F0 /* Main.storyboard */; };
 		D9B36CC41E234B9A004F93F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC31E234B9A004F93F0 /* Assets.xcassets */; };
 		D9B36CC71E234B9A004F93F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CC51E234B9A004F93F0 /* LaunchScreen.storyboard */; };
@@ -18,9 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D95BA4E31E24281E00CC6FBD /* randomUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = randomUsers.json; path = ../../randomUsers.json; sourceTree = "<group>"; };
+		D95BA4E51E2428BD00CC6FBD /* UserStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		D9B36CB91E234B9A004F93F0 /* RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B36CBC1E234B9A004F93F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D9B36CBE1E234B9A004F93F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9B36CBE1E234B9A004F93F0 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		D9B36CC11E234B9A004F93F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9B36CC31E234B9A004F93F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9B36CC61E234B9A004F93F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		D9B36CD01E234BBF004F93F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D95BA4E31E24281E00CC6FBD /* randomUsers.json */,
 				D9B36CC31E234B9A004F93F0 /* Assets.xcassets */,
 				D9B36CC81E234B9A004F93F0 /* Info.plist */,
 			);
@@ -100,7 +105,7 @@
 		D9B36CD11E234BCA004F93F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D9B36CBE1E234B9A004F93F0 /* ViewController.swift */,
+				D9B36CBE1E234B9A004F93F0 /* UsersViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		D9B36D011E240D34004F93F0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				D95BA4E51E2428BD00CC6FBD /* UserStore.swift */,
 			);
 			name = Networking;
 			path = ..;
@@ -200,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */,
+				D95BA4E41E24281E00CC6FBD /* randomUsers.json in Resources */,
 				D9B36CC71E234B9A004F93F0 /* LaunchScreen.storyboard in Resources */,
 				D9B36CC41E234B9A004F93F0 /* Assets.xcassets in Resources */,
 				D9B36CC21E234B9A004F93F0 /* Main.storyboard in Resources */,
@@ -214,7 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B36D001E240CCE004F93F0 /* User.swift in Sources */,
-				D9B36CBF1E234B9A004F93F0 /* ViewController.swift in Sources */,
+				D9B36CBF1E234B9A004F93F0 /* UsersViewController.swift in Sources */,
+				D95BA4E61E2428BD00CC6FBD /* UserStore.swift in Sources */,
 				D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */,
 				D9B36CBD1E234B9A004F93F0 /* AppDelegate.swift in Sources */,
 			);
