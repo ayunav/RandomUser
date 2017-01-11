@@ -36,7 +36,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     self.users = _users
                     self.tableView.reloadData()
                 case .failure():
-                    print("\n \n \n Error fetching users \n \n \n")
+                    print("\n Error fetching users \n")
                 }
             }
         }
@@ -83,7 +83,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
                         userCell.updateWithImage(image: _image)
                     }
                 case .failure():
-                    print("\n \n \n ERROR FETCHING PHOTO FOR USER \n \n \n")
+                    print("\n ERROR FETCHING PHOTO FOR USER \n")
                 }
             }
         })
