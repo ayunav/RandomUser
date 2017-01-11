@@ -18,7 +18,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     var users = [User]()
     
-    let userStore = UserStore()
+    let dataManager = DataManager()
     
     
     // MARK: - View
@@ -28,7 +28,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         setupTableView()
         
-        userStore.getUsers() { (usersResult) in
+        dataManager.getUsers() { (usersResult) in
             OperationQueue.main.addOperation {
                 // add loading indicator
                 switch usersResult {
@@ -71,7 +71,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let user = users[indexPath.row]
         
-        userStore.getImageForUser(user: user, completion: { (imageResult) -> Void in
+        dataManager.getImageForUser(user: user, completion: { (imageResult) -> Void in
         
             OperationQueue.main.addOperation
             {
