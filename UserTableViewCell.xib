@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11760" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11755"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -34,8 +34,8 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="6z8-Mb-o0F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="02L-Mz-M09"/>
-                    <constraint firstAttribute="bottom" secondItem="6z8-Mb-o0F" secondAttribute="bottom" constant="7.5" id="DSr-ez-UUS"/>
-                    <constraint firstAttribute="bottom" secondItem="1Y0-y2-AyR" secondAttribute="bottom" constant="7.5" id="Rf0-xd-eho"/>
+                    <constraint firstAttribute="bottom" secondItem="6z8-Mb-o0F" secondAttribute="bottom" constant="8" id="DSr-ez-UUS"/>
+                    <constraint firstAttribute="bottom" secondItem="1Y0-y2-AyR" secondAttribute="bottom" constant="8" id="Rf0-xd-eho"/>
                     <constraint firstItem="6z8-Mb-o0F" firstAttribute="leading" secondItem="1Y0-y2-AyR" secondAttribute="trailing" constant="8" id="Ulu-CX-e09"/>
                     <constraint firstItem="1Y0-y2-AyR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aHo-BQ-lGJ"/>
                     <constraint firstAttribute="trailing" secondItem="6z8-Mb-o0F" secondAttribute="trailing" constant="8" id="afQ-dc-sM0"/>
