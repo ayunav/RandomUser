@@ -36,6 +36,8 @@ struct ImageStore {
     
     func store(image: UIImage, for user: User) {
 
+        print("\n STARTED RUNNING THE FUNCTION TO STORE IMAGE LOCALLY \n")
+
         let imageName = String(Int(user.id)) + ".jpg"
         
         let imagePathUrl = documentsDirectoryUrl().appendingPathComponent(imageName)
@@ -44,7 +46,11 @@ struct ImageStore {
         
         do {
             try imageData.write(to: imagePathUrl, options: .atomic)
+            print("\n SUCCESSFULLY STORED IMAGE LOCALLY \n")
+
         } catch {
+            print("\n COULD NOT STORE THE IMAGE LOCALLY \n")
+
             print(error)
         }
     }
