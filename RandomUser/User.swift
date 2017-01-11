@@ -19,7 +19,7 @@ enum UserFields: String
 
 struct User {
     
-    var avatar      : UIImage
+    var avatar      : UIImage // make optional 
     let id          : Int
     let name        : String
     let thumbnailUrl: URL

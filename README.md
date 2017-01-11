@@ -21,12 +21,15 @@ TO-DO:
 - add placeholder image 
 - add vc programmatically
 - increase name label font 
+- fix autolayout constraints in the table view cell
 
 Resources: 
 
 - https://swiftunboxed.com/lang/closures-escaping-noescape-swift3/
 - http://swiftdeveloperblog.com/code-examples/create-uitableview-programmatically-example-in-swift/
 - http://www.appcoda.com/swift3-changes/
+- https://www.hackingwithswift.com/example-code/media/how-to-save-a-uiimage-to-a-file-using-uiimagepngrepresentation
+
 
 Qs: 
 

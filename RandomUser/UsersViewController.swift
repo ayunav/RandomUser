@@ -67,21 +67,27 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        
-//        let user = users[indexPath.row]
-//        
-//        userStore.requestImageForUser(user: user, completion: { (imageResult) -> Void in
-//        
-//            OperationQueue.main.addOperation {
-//            
-//                if let userCell = cell as? UserTableViewCell {
-//                
-//                    userCell.updateWithImage(image: user.avatar)
-//                }
-//            }
-//        })
-//    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        let user = users[indexPath.row]
+        
+        userStore.getImageForUser(user: user, completion: { (imageResult) -> Void in
+        
+            OperationQueue.main.addOperation
+            {
+                switch imageResult
+                {
+                case let .success(_image):
+                    if let userCell = cell as? UserTableViewCell
+                    {
+                        userCell.updateWithImage(image: _image)
+                    }
+                case .failure():
+                    print("\n \n \n ERROR FETCHING PHOTO FOR USER \n \n \n")
+                }
+            }
+        })
+    }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
