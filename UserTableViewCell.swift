@@ -18,13 +18,33 @@ class UserTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        updateCornerRadii()
+    }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func updateCornerRadii() {
+        let radius = self.avatarView.frame.size.width / 2.0
+        self.avatarView.layer.cornerRadius = radius
+        avatarView.clipsToBounds = true
     }
 
     
-    func updateWithImage(image: UIImage) {        
-        avatarView.image = image
+    func updateWithImage(image: UIImage) {
+        
+        avatarView.alpha = 0
+        
+        UIView.animate(withDuration: 0.5,
+                       delay: 0,
+                       options: UIViewAnimationOptions.showHideTransitionViews,
+                       animations: { () -> Void in
+                        
+                          self.avatarView.image = image
+                          self.avatarView.alpha = 1
+                        
+                       }, completion: { (Bool) -> Void in
+        })
     }
+    
 }
