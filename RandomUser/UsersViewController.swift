@@ -39,8 +39,8 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     ActivityIndicator.sharedInstance.hideActivityIndicator()
                     self.users = _users
                     self.tableView.reloadData()
-                case .failure():
-                    print("\n Error fetching users \n")
+                case let .failure(_error):
+                    print("\n Error fetching users: \(_error.localizedDescription) \n")
                 }
             }
         }
@@ -77,17 +77,14 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         dataManager.getImageForUser(user: user, completion: { (imageResult) -> Void in
         
-            OperationQueue.main.addOperation
-            {
-                switch imageResult
-                {
+            OperationQueue.main.addOperation {
+                switch imageResult {
                 case let .success(_image):
-                    if let userCell = cell as? UserTableViewCell
-                    {
+                    if let userCell = cell as? UserTableViewCell {
                         userCell.updateWithImage(image: _image)
                     }
-                case .failure():
-                    print("\n ERROR FETCHING PHOTO FOR USER \n")
+                case let .failure(_error):
+                    print("\n Error fetching an image for user: \(_error.localizedDescription) \n")
                 }
             }
         })

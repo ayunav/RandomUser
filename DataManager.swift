@@ -11,14 +11,22 @@ import UIKit
 
 enum UsersResult {
     case success([User])
-    case failure()
-//    case failure(Error)
+    case failure(Error)
 }
 
 enum ImageResult {
     case success(UIImage)
-    case failure()
+    case failure(Error)
 }
+
+enum ApiError: Error {
+    case invalidJsonData
+}
+
+enum ImageError: Error {
+    case fetchImageError
+}
+
 
 
 struct DataManager {
@@ -39,7 +47,7 @@ struct DataManager {
         if users.count > 0 {
             completion(UsersResult.success(users))
         } else {
-            completion(UsersResult.failure())
+            completion(UsersResult.failure(ApiError.invalidJsonData))
         }
     }
     
@@ -58,7 +66,7 @@ struct DataManager {
                 user.avatar = image
                 completion(.success(image!))
             } else {
-                completion(.failure())
+                completion(.failure(ImageError.fetchImageError))
             }
         }
     }
