@@ -1,5 +1,9 @@
 # Random User
 
+## How to run 
+
+To run the project, add randomUsers.json file to the Resources folder of the project. Build and run. 
+
 ## Demo 
 
 ![demo](https://github.com/ayunav/RandomUser/blob/master/RandomUserAppDemo.gif)
