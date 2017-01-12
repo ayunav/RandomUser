@@ -13,12 +13,13 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARK: - Properties
     
     private let CellIdentifier = "UserTableViewCellIdentifier"
+
+    let dataManager = DataManager()
     
     var tableView = UITableView()
-
-    var users = [User]()
+    var spinner = UIActivityIndicatorView()
     
-    let dataManager = DataManager()
+    var users = [User]()
     
     
     // MARK: - View
