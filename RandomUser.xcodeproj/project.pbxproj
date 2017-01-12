@@ -17,6 +17,7 @@
 		D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */; };
 		D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */; };
 		D9B36D001E240CCE004F93F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFF1E240CCE004F93F0 /* User.swift */; };
+		D9F9B6BC1E27530A00F52310 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F9B6BB1E27530A00F52310 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D9B36CFF1E240CCE004F93F0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9F9B6BB1E27530A00F52310 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		D9B36CF81E240014004F93F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9F9B6BB1E27530A00F52310 /* ActivityIndicator.swift */,
 				D9B36CF91E240021004F93F0 /* Cells */,
 			);
 			name = Views;
@@ -223,6 +226,7 @@
 				D9B36D001E240CCE004F93F0 /* User.swift in Sources */,
 				D9B36CBF1E234B9A004F93F0 /* UsersViewController.swift in Sources */,
 				D95BA4E61E2428BD00CC6FBD /* DataManager.swift in Sources */,
+				D9F9B6BC1E27530A00F52310 /* ActivityIndicator.swift in Sources */,
 				D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */,
 				D9B36CBD1E234B9A004F93F0 /* AppDelegate.swift in Sources */,
 			);

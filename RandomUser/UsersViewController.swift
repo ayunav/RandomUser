@@ -33,9 +33,10 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         dataManager.getUsers() { (usersResult) in
             OperationQueue.main.addOperation {
-                // add loading indicator
+                ActivityIndicator.sharedInstance.showActivityIndicatorInView(view: self.view)
                 switch usersResult {
                 case let .success(_users):
+                    ActivityIndicator.sharedInstance.hideActivityIndicator()
                     self.users = _users
                     self.tableView.reloadData()
                 case .failure():
