@@ -10,13 +10,12 @@ import UIKit
 
 struct ImageStore {
     
-    let manager = FileManager.default
+    private let manager = FileManager.default
     
-    private let documentsSubdirectoryName = "UserImages"
-    static let jpgSuffix = ".jpg"
+    private static let jpgSuffix = ".jpg"
     
     
-    func documentsDirectoryUrl() -> URL {
+    private func documentsDirectoryUrl() -> URL {
         
         let directoryPaths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectoryUrl = directoryPaths[0]
@@ -25,15 +24,9 @@ struct ImageStore {
     }
     
     
-    func userImagesDirectoryPath() -> String {
-        let newDir = documentsDirectoryUrl().appendingPathComponent(documentsSubdirectoryName).path
-        return newDir
-    }
-    
-    
     func store(image: UIImage, for user: User) {
 
-        let imageName = String(Int(user.id)) + ".jpg"
+        let imageName = String(Int(user.id)) + ImageStore.jpgSuffix
         
         let imagePathUrl = documentsDirectoryUrl().appendingPathComponent(imageName)
         
@@ -49,7 +42,7 @@ struct ImageStore {
     
     func retrieveLocalImageFor(user: User) -> UIImage? {
         
-        let imageName = String(Int(user.id)) + ".jpg"
+        let imageName = String(Int(user.id)) + ImageStore.jpgSuffix
         
         let imagePath = documentsDirectoryUrl().appendingPathComponent(imageName).path
 

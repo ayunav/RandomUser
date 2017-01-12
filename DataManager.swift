@@ -64,7 +64,6 @@ struct DataManager {
     }
 
     
-    
     func requestImageFromUrlFor(user: User) -> UIImage? {
 
         let data = try! Data(contentsOf: user.thumbnailUrl, options: [])
@@ -73,14 +72,14 @@ struct DataManager {
         
         if data.count > 0 {
             
-            image = UIImage(data: data)! // add guards here 
+            image = UIImage(data: data)!
             
             self.store.store(image: image, for: user)
             
             return image
-        
+            
         } else {
-            //image = UIImage(named: "placeholder.png")! //? not being used , should be used ?
+            
             return nil
         }
     }
