@@ -2,7 +2,7 @@
 
 ## Demo 
 
-![demo]()
+![demo](https://github.com/ayunav/RandomUser/blob/master/RandomUserAppDemo.gif)
 
 
 ## Requirements 
