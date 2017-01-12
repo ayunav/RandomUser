@@ -26,6 +26,8 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.white
+        
         setupTableView()
         
         dataManager.getUsers() { (usersResult) in
