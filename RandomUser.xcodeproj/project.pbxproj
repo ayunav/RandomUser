@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D90AD5271E2696D9006A1A13 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90AD5261E2696D9006A1A13 /* ImageStore.swift */; };
-		D95BA4E41E24281E00CC6FBD /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = D95BA4E31E24281E00CC6FBD /* randomUsers.json */; };
 		D95BA4E61E2428BD00CC6FBD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95BA4E51E2428BD00CC6FBD /* DataManager.swift */; };
 		D9B36CBD1E234B9A004F93F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CBC1E234B9A004F93F0 /* AppDelegate.swift */; };
 		D9B36CBF1E234B9A004F93F0 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CBE1E234B9A004F93F0 /* UsersViewController.swift */; };
@@ -17,12 +16,12 @@
 		D9B36CFC1E240051004F93F0 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */; };
 		D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */; };
 		D9B36D001E240CCE004F93F0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B36CFF1E240CCE004F93F0 /* User.swift */; };
+		D9E57B771E28741000AB3582 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = D9E57B761E28741000AB3582 /* randomUsers.json */; };
 		D9F9B6BC1E27530A00F52310 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F9B6BB1E27530A00F52310 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D90AD5261E2696D9006A1A13 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
-		D95BA4E31E24281E00CC6FBD /* randomUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = randomUsers.json; path = ../../randomUsers.json; sourceTree = "<group>"; };
 		D95BA4E51E2428BD00CC6FBD /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		D9B36CB91E234B9A004F93F0 /* RandomUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B36CBC1E234B9A004F93F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +32,7 @@
 		D9B36CFA1E240051004F93F0 /* UserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		D9B36CFB1E240051004F93F0 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D9B36CFF1E240CCE004F93F0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9E57B761E28741000AB3582 /* randomUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 		D9F9B6BB1E27530A00F52310 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +96,9 @@
 		D9B36CD01E234BBF004F93F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D95BA4E31E24281E00CC6FBD /* randomUsers.json */,
 				D9B36CC31E234B9A004F93F0 /* Assets.xcassets */,
 				D9B36CC81E234B9A004F93F0 /* Info.plist */,
+				D9E57B761E28741000AB3582 /* randomUsers.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9B36CFD1E240051004F93F0 /* UserTableViewCell.xib in Resources */,
-				D95BA4E41E24281E00CC6FBD /* randomUsers.json in Resources */,
+				D9E57B771E28741000AB3582 /* randomUsers.json in Resources */,
 				D9B36CC71E234B9A004F93F0 /* LaunchScreen.storyboard in Resources */,
 				D9B36CC41E234B9A004F93F0 /* Assets.xcassets in Resources */,
 			);
